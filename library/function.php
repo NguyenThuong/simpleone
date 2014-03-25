@@ -75,3 +75,128 @@ function pagination($url, $page, $total, $add_text="&amp;"){
     $out.= '</ul></div>';
     return $out;
 }
+
+/**
+ * chuyển về chuỗi tiếng việt không dấu
+ * @param  string
+ * @return string
+ */
+function strU($str){
+    $str = preg_replace("/(à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ)/", 'a', $str);
+    $str = preg_replace("/(è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ)/", 'e', $str);
+    $str = preg_replace("/(ì|í|ị|ỉ|ĩ)/", 'i', $str);
+    $str = preg_replace("/(ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ)/", 'o', $str);
+    $str = preg_replace("/(ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ)/", 'u', $str);
+    $str = preg_replace("/(ỳ|ý|ỵ|ỷ|ỹ)/", 'y', $str);
+    $str = preg_replace("/(đ)/", 'd', $str);
+    $str = preg_replace("/(À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ)/", 'A', $str);
+    $str = preg_replace("/(È|É|Ẹ|Ẻ|Ẽ|Ê|Ề|Ế|Ệ|Ể|Ễ)/", 'E', $str);
+    $str = preg_replace("/(Ì|Í|Ị|Ỉ|Ĩ)/", 'I', $str);
+    $str = preg_replace("/(Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ)/", 'O', $str);
+    $str = preg_replace("/(Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ)/", 'U', $str);
+    $str = preg_replace("/(Ỳ|Ý|Ỵ|Ỷ|Ỹ)/", 'Y', $str);
+    $str = preg_replace("/(Đ)/", 'D', $str);
+    $str = preg_replace("/[^A-Za-z0-9 ]/", '', $str);
+    $str = preg_replace("/\s+/", ' ', $str);
+    $str = trim($str);
+    return $str;
+}
+
+/**
+ * Chuyển về chuỗi alias
+ * @param  string
+ * @return string
+ */
+function alias($str){
+    $str = strU($str);
+    $str = strtolower($str);    
+    $str = str_replace(' ', '-', $str);
+    return $str;
+}
+
+function menu_list($categories=array()) {
+    $list = array(
+        'items' => array(),
+        'parents' => array()
+    );
+    foreach ($categories as $item) {
+        $list['items'][$item['id']] = $item;
+        $list['parents'][$item['parent_id']][] = $item['id'];
+    }
+    return $list;
+}
+
+/**
+ * Menu đa cấp ul li
+ * @param  array
+ * @return string
+ */
+function menu_li(&$list=array(), $parent_id=0, $template='<li cid="{id}"><label>{name}</label>')
+{
+    $html = '';
+    if(isset($list['parents'][$parent_id])){
+        $html = '<ul class="nav nav-list categories">';
+
+        foreach($list['parents'][$parent_id] as $id){
+            $item = $list['items'][$id];
+
+            if(!empty($list['parents'][$id])){
+                $has_child = ' submenu';
+            } else {
+                $has_child = '';
+            }
+
+            $html .= '<li><a href="?controller=category&view=index&cid='.$item['id'].'">'.$item['name'].'</a>';
+
+            if(!empty($list['parents'][$id])){
+                $html .= menu_li($list, $id);
+            }
+
+            $html .= '</li>';
+        }
+
+        $html .= '</ul>';
+    }            
+    return $html;
+}
+
+/**
+ * Menu đa cấp select option
+ * @param  array
+ * @return string
+ */
+function menu_option(&$list=array(), $select_id=0, $parent_id=0, $add_text='... ')
+{
+    $html = '';
+    if(isset($list['parents'][$parent_id])){
+        foreach($list['parents'][$parent_id] as $id){
+            $item = $list['items'][$id];
+            
+            if ($id==$select_id) {
+                $selected = 'selected=""';
+            } else {
+                $selected = '';
+            }
+            
+            $html .= '<option value="'.$item['id'].'" '.$selected.'>'.$add_text.$item['name'].'</option>';
+
+            if(!empty($list['parents'][$id])){
+                $html .= menu_option($list, $select_id, $id, '...'.$add_text);
+            }
+        }
+    }            
+    return $html;
+}
+
+function categories_child(&$list=array(), $parent_id=0) {
+    $arr = array();
+    if(isset($list['parents'][$parent_id])){
+        foreach($list['parents'][$parent_id] as $id){
+            $arr[] = $id;
+            if(!empty($list['parents'][$id])){
+                $arr = array_merge($arr, categories_child($list, $id));
+            }
+        }
+    }            
+    return $arr;
+}

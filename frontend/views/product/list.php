@@ -1,10 +1,10 @@
 <!-- Featured Product-->
       <div class="span9">
         <section id="featured" class="row mt40">
-        <?php if(!empty($products)){ ?>
-          <h1 class="heading1 mt0"><span class="maintext">Featured Products</span><span class="subtext"> See Our Most featured Products</span></h1>          
+        <?php if(!empty($p_products)){ ?>
+          <h1 class="heading1 mt0"><span class="maintext">Sản phẩm mới</span></h1>          
         <?php }else{ ?>
-          <h1 class="heading1 mt0"><span class="maintext">No Featured Products</span><span class="subtext"> See Our Most featured Products</span></h1>
+          <h1 class="heading1 mt0"><span class="maintext">Hiện tại chưa có sản phẩm</span></h1>
         <?php } ?>
                 
           <ul class="thumbnails">
@@ -57,7 +57,13 @@
 
           </div>  -->   
           
-          <?php echo $pagination; ?>
+          
+          <?php 
+          if(!empty($p_products))
+          {
+            echo $pagination ;
+          }
+          ?>
 
         </section>
       </div>

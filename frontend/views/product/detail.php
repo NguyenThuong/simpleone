@@ -2,7 +2,7 @@
       <div class="span9">
         <section id="featured" class="row mt40">
         <?php if(!empty($products)){ ?>
-          <h1 class="heading1 mt0"><span class="maintext">Featured Products</span></h1>          
+          <h1 class="heading1 mt0"><span class="maintext">Chi tiết sản phẩm</span></h1>          
         <?php }else{ ?>
           <h1 class="heading1 mt0"><span class="maintext">No Featured Products</span></h1>
         <?php } ?>

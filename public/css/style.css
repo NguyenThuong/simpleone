@@ -340,9 +340,9 @@ ul.comments .commentdetail { margin-left:80px }
 /* Categories */
 .categorytitle { margin:0 0 35px 0 }
 ul.categories { background: none repeat scroll 0 0 #FFFFFF; border-radius: 4px 4px 4px 4px; padding-top:10px; padding-bottom:10px }
-ul.categories li { display:block; border-bottom:1px dashed #E7E7E7 }
+ul.categories li { display:block; /*border-bottom:1px dashed #E7E7E7*/ }
 ul.categories li:last-child { border:none }
-ul.categories li a { display:block; padding:11px 5px 11px 30px; background: url("../img/arrowcategory.png") no-repeat scroll 10px center transparent; color:#999999 }
+ul.categories li a { border-bottom: 1px dashed #E7E7E7; display:block; padding:11px 5px 11px 30px; background: url("../img/arrowcategory.png") no-repeat scroll 10px center transparent; color:#999999 }
 ul.categories li a.active { color:#f25c27 }
 ul.categories li a:hover { background-image: url("../img/arrowcategory.png") no-repeat scroll 10px center transparent; color:#333 }
 /* Bestsellter */
