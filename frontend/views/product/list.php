@@ -28,7 +28,7 @@
           </ul>
 
           <!-- Phan Trang -->
-          <div class="pagination pull-right">
+          <!-- <div class="pagination pull-right">
 
 
             <ul>
@@ -55,8 +55,9 @@
 
           
 
-          </div>    
+          </div>  -->   
           
+          <?php echo $pagination; ?>
 
         </section>
       </div>

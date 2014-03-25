@@ -8,21 +8,21 @@ $pro = new Product();
 $products = $pro->getAll('products');
 
 //Phan Trang
-if(isset($_GET['page'])) $current_page = $_GET['page'];
-else $current_page = 1;
+if(isset($_GET['page'])) $page = intval($_GET['page']);
+else $page = 1;
 
-$total_product = count($products);
-$product_per_page = 2;
-$total_page = ceil($total_product/$product_per_page);
+$page = ($page>0) ? $page : 1;
+$limit = 6;
+$star = ($page - 1) * $limit;
 
-$star = (($current_page - 1) * $product_per_page) + 1;
-$end = $current_page * $product_per_page;
-if($end > $total_product)
-{
-	$end = $total_product;
-}
 
-$p_products = get_product_subset($star,$end,$products);
 
+$url = '?controller=product&action=index';
+$total_rows = count($products);
+$total = ceil($total_rows/$limit);
+
+//San pham va phan trang
+$p_products = $pro->getLimit('products', $star, $limit);
+$pagination = pagination($url, $page, $total, '&');
 
 require_once('frontend/views/product/index.php');
