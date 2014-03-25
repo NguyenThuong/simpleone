@@ -26,4 +26,14 @@ class Product{
 		return $data;
 
 	}
+
+	public function getOne($table, $pid)
+	{
+		$query = "SELECT * FROM $table WHERE id = '$pid'";
+		$result = mysql_query($query) or die(mysql_error());
+		//$data = array();
+		$data = mysql_fetch_assoc($result);
+
+		return $data;
+	}
 }

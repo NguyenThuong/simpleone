@@ -10,11 +10,11 @@
           <ul class="thumbnails">
           <?php foreach($p_products as $product): ?>
             <li class="span3">
-              <a class="prdocutname" href="product.html"><?php echo $product['name'] ?></a>
+              <a class="prdocutname" href="?controller=product&action=view&pid=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a>
               <div class="thumbnail">
-                <a href="#"><img alt="" src="public/upload/product/<?php echo $product['image'] ?>"></a>
+                <a href="?controller=product&action=view&pid=<?php echo $product['id']; ?>"><img alt="" src="public/upload/product/<?php echo $product['image'] ?>"></a>
                 <div class="shortlinks">
-                  <a class="details" href="#">DETAILS</a>
+                  <a class="details" href="?controller=product&action=view&pid=<?php echo $product['id']; ?>">DETAILS</a>
                 </div>
                 <div class="pricetag">
                   <span class="spiral"></span><a href="#" class="productcart">ADD TO CART</a>
