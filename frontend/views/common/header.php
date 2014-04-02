@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title><?php echo isset($title) ? $title : 'Shop Simple One' ?></title>
+<title><?php echo isset($title) ? $title : 'Thế Giới Di Động' ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -36,13 +36,11 @@
             <div class="navbar" id="topnav">
               <div class="navbar-inner">
                 <ul class="nav" >
-                  <li><a class="home active" href="./">Home</a>
+                  <li><a class="home active" href="./">Trang Chủ</a>
                   </li>
-                  <li><a class="myaccount" href="#">My Account</a>
+                  <li><a class="shoppingcart" href="?controller=cart&action=index">Giỏ Hàng</a>
                   </li>
-                  <li><a class="shoppingcart" href="#">Shopping Cart</a>
-                  </li>
-                  <li><a class="checkout" href="#">CheckOut</a>
+                  <li><a class="checkout" href="?controller=cart&action=order">Thanh Toán</a>
                   </li>
                 </ul>
               </div>
@@ -51,7 +49,7 @@
           <!-- Top Nav End -->
           <div class="pull-right">
             <form class="form-search top-search">
-              <input type="text" class="input-medium search-query" placeholder="Search Here…">
+              <input type="text" class="input-medium search-query" placeholder="Tìm kiếm...">
             </form>
           </div>
         </div>
@@ -64,53 +62,8 @@
       <div class="pull-right">
         <ul class="nav topcart pull-left">
           <li class="dropdown hover carticon ">
-            <a href="#" class="dropdown-toggle" > Shopping Cart <span class="label label-orange font14">1 item(s)</span> - $589.50 <b class="caret"></b></a>
-            <ul class="dropdown-menu topcartopen ">
-              <li>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="image"><a href="product.html"><img width="50" height="50" src="public/img/prodcut-40x40.jpg" alt="product" title="product"></a></td>
-                      <td class="name"><a href="product.html">MacBook</a></td>
-                      <td class="quantity">x&nbsp;1</td>
-                      <td class="total">$589.50</td>
-                      <td class="remove"><i class="icon-remove"></i></td>
-                    </tr>
-                    <tr>
-                      <td class="image"><a href="product.html"><img width="50" height="50" src="public/img/prodcut-40x40.jpg" alt="product" title="product"></a></td>
-                      <td class="name"><a href="product.html">MacBook</a></td>
-                      <td class="quantity">x&nbsp;1</td>
-                      <td class="total">$589.50</td>
-                      <td class="remove"><i class="icon-remove "></i></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="textright"><b>Sub-Total:</b></td>
-                      <td class="textright">$500.00</td>
-                    </tr>
-                    <tr>
-                      <td class="textright"><b>Eco Tax (-2.00):</b></td>
-                      <td class="textright">$2.00</td>
-                    </tr>
-                    <tr>
-                      <td class="textright"><b>VAT (17.5%):</b></td>
-                      <td class="textright">$87.50</td>
-                    </tr>
-                    <tr>
-                      <td class="textright"><b>Total:</b></td>
-                      <td class="textright">$589.50</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="well pull-right buttonwrap">
-                  <a class="btn btn-orange" href="#">View Cart</a>
-                  <a class="btn btn-orange" href="#">Checkout</a>
-                </div>
-              </li>
-            </ul>
+            <a href="?controller=cart&action=index" class="dropdown-toggle" > Giỏ Hàng <span class="label label-orange font14"><?php echo cart_number(); ?></span></a>
+            
           </li>
         </ul>
       </div>

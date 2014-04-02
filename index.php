@@ -5,6 +5,7 @@ session_start();
 require_once('config.php');
 require_once('library/function.php');
 require_once('frontend/models/m_product.php');
+require_once('frontend/models/m_cart.php');
 
 //Xử lý request từ trình duyệt và gọi controller/action tương ứng
 if(isset($_GET['controller'])) $controller = $_GET['controller'];
@@ -24,3 +25,4 @@ else
 }
 
 mysql_close($db);
+

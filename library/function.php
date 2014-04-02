@@ -8,6 +8,10 @@ function show_404(){
     exit();
 }
 
+function escape($str) {
+    return mysql_real_escape_string($str);
+}
+
 function get_product_subset($star,$end,$products)
 {
 	$subset = array();
@@ -131,6 +135,30 @@ function menu_list($categories=array()) {
  * @param  array
  * @return string
  */
+
+function menu($data, $parent = 0)
+{
+    $html = "";
+    
+    foreach($data as $k => $value)
+    {
+
+        if($value['parent_id'] == $parent)
+        {
+            $html .= '<ul class="nav nav-list categories">';
+            
+            $html .= '<li><a href="?controller=category&view=index&cid='.$value['id'].'">'.$value['name'].'</a>';
+            $id = $value['id'];
+            unset($data[$k]);
+            echo menu($data, $id);
+            $html .= "</li>";
+            $html .= "</ul>";
+        }
+    }
+    
+    return $html;
+}
+
 function menu_li(&$list=array(), $parent_id=0, $template='<li cid="{id}"><label>{name}</label>')
 {
     $html = '';

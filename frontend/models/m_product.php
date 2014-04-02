@@ -87,4 +87,6 @@ class Product{
 	    return $data;	
 	}
 
+
 }
+

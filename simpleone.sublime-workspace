@@ -1,0 +1,427 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"exlo",
+				"explode"
+			],
+			[
+				"mysqlfet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"set",
+				"select	<select>"
+			],
+			[
+				"cate",
+				"category  (variable)"
+			],
+			[
+				"simple",
+				"simpleone/"
+			],
+			[
+				"total_",
+				"total_page  (variable)"
+			],
+			[
+				"total_p",
+				"total_product  (variable)"
+			],
+			[
+				"prud",
+				"product_per_page  (variable)"
+			],
+			[
+				"product_",
+				"product_per_page  (variable)"
+			],
+			[
+				"toal",
+				"total_product"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mysql_fetch",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mysql_er",
+				"mysql_error"
+			],
+			[
+				"error",
+				"error_reporting  (function)"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"array",
+				"array  (function)"
+			],
+			[
+				"err",
+				"error_reporting"
+			],
+			[
+				"require_one",
+				"require_once  (function)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"xde",
+				"Xdebug: Restart Session"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"intel",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 610.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/zorinvn/.cache/.fr-BJX1tU/200kb.txt",
+		"/home/zorinvn/.cache/.fr-hoIWwF/public_html/index.php",
+		"/home/zorinvn/.cache/.fr-G8zlN0/public_html/.htaccess",
+		"/opt/lampp/htdocs/php-mvc-master/application/controller/songs.php",
+		"/opt/lampp/htdocs/php-mvc-advanced-master/index.php",
+		"/opt/lampp/htdocs/php-mvc-advanced-master/application/libs/sass-compiler.php",
+		"/opt/lampp/htdocs/php-mvc-advanced-master/application/config/config.php",
+		"/opt/lampp/htdocs/php-login-master/application/views/_templates/header.php",
+		"/opt/lampp/htdocs/php-login-master/application/views/_templates/footer.php",
+		"/opt/lampp/htdocs/php-mvc-advanced-master/.htaccess",
+		"/opt/lampp/htdocs/php-login-master/application/controllers/login.php",
+		"/opt/lampp/htdocs/php-login-master/application/models/login_model.php",
+		"/opt/lampp/htdocs/php-login-master/application/config/config.php",
+		"/opt/lampp/htdocs/test/index.php",
+		"/opt/lampp/htdocs/php-login-master/application/libs/Auth.php",
+		"/opt/lampp/htdocs/php-login-master/application/views/.htaccess",
+		"/opt/lampp/htdocs/php-login-master/application/views/login/register.php",
+		"/opt/lampp/htdocs/php-login-master/.htaccess",
+		"/opt/lampp/htdocs/php-mvc-master/application/config/config.php",
+		"/opt/lampp/htdocs/php-mvc-master/.htaccess",
+		"/home/zorinvn/Working/php-login-master/.htaccess",
+		"/home/zorinvn/Working/php-login-master/application/controllers/login.php",
+		"/opt/lampp/htdocs/php-login-advanced/classes/Registration.php",
+		"/opt/lampp/htdocs/php-login-advanced/config/config.php",
+		"/opt/lampp/htdocs/application/config/config.php",
+		"/opt/lampp/htdocs/php-login-master/application/libs/Database.php",
+		"/opt/lampp/htdocs/php-login-master/application/config/autoload.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/product/detail.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/product/view.php",
+		"/opt/lampp/htdocs/simpleone/index.php",
+		"/opt/lampp/htdocs/simpleone/simpleone.sublime-project",
+		"/opt/lampp/htdocs/shop.vn/backend/controllers/product/index.php",
+		"/opt/lampp/htdocs/shop.vn/backend/models/products.php",
+		"/opt/lampp/htdocs/shop.vn/backend/models/users.php",
+		"/opt/lampp/htdocs/shop.vn/backend/models/orders.php",
+		"/opt/lampp/htdocs/shop.vn/backend/models/model.php",
+		"/opt/lampp/htdocs/shop.vn/backend/models/categories.php",
+		"/opt/lampp/htdocs/shop.vn/librarys/CImage.php",
+		"/opt/lampp/htdocs/shop.vn/librarys/functions.php",
+		"/opt/lampp/htdocs/test/config.php",
+		"/opt/lampp/htdocs/test/Class.db.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/controllers/category/index.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/models/model.php",
+		"/opt/lampp/htdocs/simpleone/frontend/models/m_product.php",
+		"/opt/lampp/htdocs/simpleone/library/function.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/common/sidebar.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/category/index.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/product/list.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/category/index.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/product/index.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/product/index.php",
+		"/opt/lampp/htdocs/simpleone/public/css/style.css",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/product/simpleone.sublime-project",
+		"/opt/lampp/htdocs/simpleone/frontend/views/product/view.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/common/header.php",
+		"/media/zorinvn/NGUYEN THUONG/Education/Train PHP/Layout/Website Template/Template Ecommerce/Simpleone/product2.html",
+		"/etc/php5/mods-available/xdebug.ini",
+		"/opt/lampp/htdocs/simpleone/public/category.html",
+		"/media/zorinvn/NGUYEN THUONG/Education/Train PHP/Layout/Website Template/Template Ecommerce/Simpleone/category.html",
+		"/opt/lampp/htdocs/simpleone/frontend/models/model.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/common/footer.php",
+		"/opt/lampp/htdocs/simpleone/public/index4.html",
+		"/opt/lampp/htdocs/simpleone/config.php",
+		"/opt/lampp/htdocs/simpleone/404.php",
+		"/opt/lampp/htdocs/simpleone/index4.html",
+		"/opt/lampp/htdocs/shopvn/frontend/controllers/product/index.php",
+		"/opt/lampp/htdocs/shopvn/frontend/controllers/cart/delete.php",
+		"/opt/lampp/htdocs/shopvn/frontend/controllers/cart/order.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/cart/order_detail.php",
+		"/opt/lampp/htdocs/shopvn/frontend/controllers/cart/send.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/cart/send.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/cart/order.php",
+		"/opt/lampp/htdocs/shopvn/frontend/controllers/cart/add.php",
+		"/opt/lampp/htdocs/shopvn/frontend/controllers/cart/index.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/cart/index.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/cart/list.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/category/index.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/product/list.php",
+		"/opt/lampp/htdocs/shopvn/frontend/controllers/category/index.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/common/header.php",
+		"/opt/lampp/htdocs/shopvn/frontend/models/model.php",
+		"/opt/lampp/htdocs/shopvn/frontend/controllers/product/view.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/product/view.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/product/detail.php",
+		"/opt/lampp/htdocs/shopvn/frontend/views/product/index.php",
+		"/opt/lampp/htdocs/shopvn/index.php",
+		"/opt/lampp/htdocs/shop.vn/index.php",
+		"/opt/lampp/htdocs/shopvn/.htaccess",
+		"/opt/lampp/htdocs/shop.vn/.htaccess",
+		"/opt/lampp/htdocs/shopvn/frontend/models/cart.php",
+		"/opt/lampp/htdocs/shopvn/librarys/functions.php",
+		"/opt/lampp/htdocs/shopvn/404.php",
+		"/opt/lampp/htdocs/shopvn/librarys/CImage.php",
+		"/opt/lampp/htdocs/shopvn/admin.php",
+		"/opt/lampp/htdocs/shopvn/config.php",
+		"/home/zorinvn/.config/sublime-text-3/Packages/Gist/Gist.sublime-settings",
+		"/home/zorinvn/.config/sublime-text-3/Packages/User/Gist.sublime-settings",
+		"/opt/lampp/htdocs/shop.vn/config.php",
+		"/opt/lampp/htdocs/Dropbox/blog/index.php",
+		"/home/zorinvn/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/opt/lampp/htdocs/Dropbox/blog/system/core/CodeIgniter.php",
+		"/opt/lampp/htdocs/Dropbox/blog/theme/css/colors/color-darkgray.css",
+		"/opt/lampp/htdocs/Dropbox/blog/theme/css/colors/color-orange.css",
+		"/opt/lampp/htdocs/xampp/cds.php",
+		"/opt/lampp/htdocs/Dropbox/blog/theme/css/colors/color-pink.css",
+		"/opt/lampp/htdocs/xampp/security.php",
+		"/opt/lampp/htdocs/Dropbox/blog/system/database/drivers/sqlite/sqlite_utility.php",
+		"/opt/lampp/htdocs/Dropbox/dienthoai52/publics/tiny_mce/themes/advanced/skins/o2k7/ui_black.css",
+		"/opt/lampp/htdocs/Dropbox/blog/system/database/drivers/cubrid/cubrid_utility.php",
+		"/opt/lampp/htdocs/Dropbox/mafia/yshout-betting/example/light.html",
+		"/home/zorinvn/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/opt/lampp/htdocs/Dropbox/blog/theme/css/boxed.css",
+		"/opt/lampp/htdocs/Dropbox/blog/theme/css/fancybox.css"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"project": "simpleone.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"19":
+				{
+					"group": 0,
+					"index": 0
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

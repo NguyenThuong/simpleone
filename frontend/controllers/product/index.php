@@ -1,7 +1,7 @@
 <?php
 
 //Data
-$title = "Shop Simple One";
+$title = "Thế Giới Di Động";
 
 //Lấy dữ liệu từ DB
 $pro = new Product();
