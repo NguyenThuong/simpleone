@@ -1,4 +1,4 @@
-<form id="cart_form" method="post" action="?controller=cart&action=update" role="form">
+<form id="cart_form" method="post" action="cap-nhap-gio-hang.html" role="form">
 <div id="maincontainer">
   <section id="product">
     <div class="container">
@@ -25,7 +25,7 @@
             <td class="image"><a href="#"><img title="product" alt="product" src="public/upload/product/<?php echo $product['image']; ?>" height="50" width="50"></a></td>
             <td  class="name"><a href="#"><?php echo $product['name']; ?></a></td>
             <td class="quantity"><input type="text" size="1" value="<?php echo $product['number']; ?>" name="number[<?php echo $product['id'];?>]" class="span1"></td>
-            <td class="total"><a href="?controller=cart&action=delete&pid=<?php echo $product['id']; ?>"><img class="tooltip-test" data-original-title="Remove"  src="public/img/remove.png" alt=""></a></td>
+            <td class="total"><a href="xoa-gio-hang.html?pid=<?php echo $product['id']; ?>"><img class="tooltip-test" data-original-title="Remove"  src="public/img/remove.png" alt=""></a></td>
             <td class="price"><?php echo number_format($product['price'],0,',','.'); ?></td>
           </tr>
           <?php endforeach; ?>
@@ -48,7 +48,7 @@
             
 
             
-            <a href="?controller=cart&action=order" class="btn btn-orange pull-right">Thanh Toán</a>
+            <a href="don-hang.html" class="btn btn-orange pull-right">Thanh Toán</a>
             <input type="submit" value="Cập Nhập" class="btn btn-orange pull-right mr10">
           </div>
         </div>

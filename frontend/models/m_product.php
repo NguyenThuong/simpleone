@@ -87,6 +87,31 @@ class Product{
 	    return $data;	
 	}
 
+	/**
+	 * Trả về tất cả bản ghi thỏa mãn điều kiện trong $option. 
+	 */
+	public function get_all($table, $options = array()) {
+	    //xử lý $options
+	    $select = isset($options['select']) ? $options['select'] : '*';
+	    $where = isset($options['where']) ? 'WHERE ' . $options['where'] : '';
+	    $order_by = isset($options['order_by']) ? 'ORDER BY ' . $options['order_by'] : '';
+	    $limit = isset($options['offset']) && isset($options['limit']) ? 'LIMIT ' . $options['offset'] . ',' . $options['limit'] : '';
+
+	    //truy vấn
+	    $sql = "SELECT $select FROM `$table` $where $order_by $limit";
+	    $query = mysql_query($sql) or die(mysql_error());
+
+	    //dữ liệu trả về
+	    $data = array();
+	    if (mysql_num_rows($query) > 0) {
+	        while ($row = mysql_fetch_assoc($query)) {
+	            $data[] = $row;
+	        }
+	        mysql_free_result($query);
+	    }
+
+	    return $data;
+	}
 
 }
 

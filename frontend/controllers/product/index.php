@@ -17,12 +17,12 @@ $star = ($page - 1) * $limit;
 
 
 
-$url = '?controller=product&action=index';
+$url = 'san-pham.html';
 $total_rows = count($products);
 $total = ceil($total_rows/$limit);
 
 //San pham va phan trang
 $p_products = $pro->getLimit('products', $star, $limit);
-$pagination = pagination($url, $page, $total, '&');
+$pagination = pagination($url, $page, $total, '?');
 
 require_once('frontend/views/product/index.php');

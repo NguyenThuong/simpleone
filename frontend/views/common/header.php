@@ -38,9 +38,9 @@
                 <ul class="nav" >
                   <li><a class="home active" href="./">Trang Chủ</a>
                   </li>
-                  <li><a class="shoppingcart" href="?controller=cart&action=index">Giỏ Hàng</a>
+                  <li><a class="shoppingcart" href="gio-hang.html">Giỏ Hàng</a>
                   </li>
-                  <li><a class="checkout" href="?controller=cart&action=order">Thanh Toán</a>
+                  <li><a class="checkout" href="don-hang.html">Thanh Toán</a>
                   </li>
                 </ul>
               </div>
@@ -62,7 +62,7 @@
       <div class="pull-right">
         <ul class="nav topcart pull-left">
           <li class="dropdown hover carticon ">
-            <a href="?controller=cart&action=index" class="dropdown-toggle" > Giỏ Hàng <span class="label label-orange font14"><?php echo cart_number(); ?></span></a>
+            <a href="gio-hang.html" class="dropdown-toggle" > Giỏ Hàng <span class="label label-orange font14"><?php echo cart_number(); ?></span></a>
             
           </li>
         </ul>

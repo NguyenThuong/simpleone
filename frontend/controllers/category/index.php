@@ -31,13 +31,13 @@ $options = array(
     'order_by' => 'id DESC'
 );
 
-$url = '?controller=product&action=index';
+$url = alias($category['name']).'-c'.$category['id'].'.html';
 $total_rows = $pro->get_total('products', $options);
 $total = ceil($total_rows/$limit);
 
 //San pham va phan trang
-$p_products = $pro->getProCat('products', $options);
-$pagination = pagination($url, $page, $total, '&');
+$p_products = $pro->get_all('products', $options);
+$pagination = pagination($url, $page, $total, '?');
 
 //load view
 require('frontend/views/category/index.php');

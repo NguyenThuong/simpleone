@@ -10,14 +10,14 @@
           <ul class="thumbnails">
           <?php foreach($p_products as $product): ?>
             <li class="span3">
-              <a class="prdocutname" href="?controller=product&action=view&pid=<?php echo $product['id']; ?>"><?php echo $product['name']; ?></a>
+              <a class="prdocutname" href="<?php echo alias($product['name']).'-p'. $product['id'].'.html'; ?>"><?php echo $product['name']; ?></a>
               <div class="thumbnail">
-                <a href="?controller=product&action=view&pid=<?php echo $product['id']; ?>"><img alt="" src="public/upload/product/<?php echo $product['image'] ?>"></a>
+                <a href="<?php echo alias($product['name']).'-p'. $product['id'].'.html'; ?>"><img alt="" src="public/upload/product/<?php echo $product['image'] ?>"></a>
                 <div class="shortlinks">
-                  <a class="details" href="?controller=product&action=view&pid=<?php echo $product['id']; ?>">CHI TIẾT</a>
+                  <a class="details" href="<?php echo alias($product['name']).'-p'. $product['id'].'.html'; ?>">CHI TIẾT</a>
                 </div>
                 <div class="pricetag">
-                  <span class="spiral"></span><a href="?controller=cart&action=add&pid=<?php echo $product['id']; ?>" class="productcart">MUA HÀNG</a>
+                  <span class="spiral"></span><a href="them-gio-hang.html?pid=<?php echo $product['id']; ?>" class="productcart">MUA HÀNG</a>
                   <div class="price">
                     <div class="pricenew"><?php echo number_format($product['price'],0,',','.') ?></div>
                   </div>

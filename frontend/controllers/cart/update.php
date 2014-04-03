@@ -9,5 +9,5 @@ if(!empty($_POST))
 		}
 		
 	}
-	header('location: ?controller=cart&action=index');
+	header('location: gio-hang.html');
 }

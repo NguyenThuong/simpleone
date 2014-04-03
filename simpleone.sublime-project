@@ -5,10 +5,5 @@
 			"follow_symlinks": true,
 			"path": "/opt/lampp/htdocs"
 		}
-	],
-	"settings": {
-        "xdebug": {
-             "url": "http://localhost/simpleone",
-        }
-    }
+	]
 }

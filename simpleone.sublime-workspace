@@ -4,16 +4,32 @@
 		"selected_items":
 		[
 			[
+				"sa",
+				"save"
+			],
+			[
+				"em",
+				"empty"
+			],
+			[
+				"number",
+				"number_format"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"_SE",
+				"_SESSION  (variable)"
+			],
+			[
 				"exlo",
 				"explode"
 			],
 			[
 				"mysqlfet",
 				"mysql_fetch_assoc"
-			],
-			[
-				"prin",
-				"print_r"
 			],
 			[
 				"unse",
@@ -87,6 +103,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "frontend/views/common/header.php",
+			"settings":
+			{
+				"buffer_size": 2864,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -157,6 +181,51 @@
 	},
 	"file_history":
 	[
+		"/opt/lampp/htdocs/simpleone/frontend/views/common/header.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/product/list.php",
+		"/opt/lampp/htdocs/simpleone/config.php",
+		"/opt/lampp/htdocs/simpleone/.htaccess",
+		"/opt/lampp/htdocs/simpleone/frontend/views/cart/order_detail.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/cart/send.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/cart/update.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/cart/order.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/cart/index.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/cart/add.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/cart/order.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/cart/index.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/cart/list.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/cart/delete.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/cart/list.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/category/index.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/models/model.php",
+		"/opt/lampp/htdocs/simpleone/frontend/models/m_product.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/controllers/category/index.php",
+		"/opt/lampp/htdocs/simpleone/library/function.php",
+		"/opt/lampp/htdocs/shop.vn/librarys/functions.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/controllers/product/index.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/product/index.php",
+		"/opt/lampp/htdocs/simpleone/frontend/controllers/product/view.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/product/list.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/product/view.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/product/detail.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/product/detail.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/common/sidebar.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/common/sidebar.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/category/index.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/common/header.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/common/navbar.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/common/footer.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/product/index.php",
+		"/opt/lampp/htdocs/simpleone/index.php",
+		"/opt/lampp/htdocs/simpleone/frontend/views/cart/send.php",
+		"/opt/lampp/htdocs/simpleone/frontend/models/m_cart.php",
+		"/home/zorinvn/Working/Simpleone/checkout.html",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/cart/order_detail.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/cart/order.php",
+		"/opt/lampp/htdocs/shop.vn/frontend/views/cart/send.php",
+		"/opt/lampp/htdocs/Dropbox/data_private/shop.vn/config.php",
+		"/home/zorinvn/Working/Simpleone/shopping-cart.html",
+		"/opt/lampp/htdocs/simpleone/frontend/views/category/index.php",
 		"/home/zorinvn/.cache/.fr-BJX1tU/200kb.txt",
 		"/home/zorinvn/.cache/.fr-hoIWwF/public_html/index.php",
 		"/home/zorinvn/.cache/.fr-G8zlN0/public_html/.htaccess",
@@ -184,9 +253,6 @@
 		"/opt/lampp/htdocs/application/config/config.php",
 		"/opt/lampp/htdocs/php-login-master/application/libs/Database.php",
 		"/opt/lampp/htdocs/php-login-master/application/config/autoload.php",
-		"/opt/lampp/htdocs/simpleone/frontend/views/product/detail.php",
-		"/opt/lampp/htdocs/simpleone/frontend/controllers/product/view.php",
-		"/opt/lampp/htdocs/simpleone/index.php",
 		"/opt/lampp/htdocs/simpleone/simpleone.sublime-project",
 		"/opt/lampp/htdocs/shop.vn/backend/controllers/product/index.php",
 		"/opt/lampp/htdocs/shop.vn/backend/models/products.php",
@@ -195,31 +261,16 @@
 		"/opt/lampp/htdocs/shop.vn/backend/models/model.php",
 		"/opt/lampp/htdocs/shop.vn/backend/models/categories.php",
 		"/opt/lampp/htdocs/shop.vn/librarys/CImage.php",
-		"/opt/lampp/htdocs/shop.vn/librarys/functions.php",
 		"/opt/lampp/htdocs/test/config.php",
 		"/opt/lampp/htdocs/test/Class.db.php",
-		"/opt/lampp/htdocs/shop.vn/frontend/controllers/category/index.php",
-		"/opt/lampp/htdocs/shop.vn/frontend/models/model.php",
-		"/opt/lampp/htdocs/simpleone/frontend/models/m_product.php",
-		"/opt/lampp/htdocs/simpleone/library/function.php",
-		"/opt/lampp/htdocs/simpleone/frontend/views/common/sidebar.php",
-		"/opt/lampp/htdocs/simpleone/frontend/controllers/category/index.php",
-		"/opt/lampp/htdocs/simpleone/frontend/views/product/list.php",
-		"/opt/lampp/htdocs/simpleone/frontend/views/category/index.php",
-		"/opt/lampp/htdocs/simpleone/frontend/views/product/index.php",
-		"/opt/lampp/htdocs/simpleone/frontend/controllers/product/index.php",
 		"/opt/lampp/htdocs/simpleone/public/css/style.css",
 		"/opt/lampp/htdocs/simpleone/frontend/controllers/product/simpleone.sublime-project",
-		"/opt/lampp/htdocs/simpleone/frontend/views/product/view.php",
-		"/opt/lampp/htdocs/simpleone/frontend/views/common/header.php",
 		"/media/zorinvn/NGUYEN THUONG/Education/Train PHP/Layout/Website Template/Template Ecommerce/Simpleone/product2.html",
 		"/etc/php5/mods-available/xdebug.ini",
 		"/opt/lampp/htdocs/simpleone/public/category.html",
 		"/media/zorinvn/NGUYEN THUONG/Education/Train PHP/Layout/Website Template/Template Ecommerce/Simpleone/category.html",
 		"/opt/lampp/htdocs/simpleone/frontend/models/model.php",
-		"/opt/lampp/htdocs/simpleone/frontend/views/common/footer.php",
 		"/opt/lampp/htdocs/simpleone/public/index4.html",
-		"/opt/lampp/htdocs/simpleone/config.php",
 		"/opt/lampp/htdocs/simpleone/404.php",
 		"/opt/lampp/htdocs/simpleone/index4.html",
 		"/opt/lampp/htdocs/shopvn/frontend/controllers/product/index.php",
@@ -257,23 +308,11 @@
 		"/opt/lampp/htdocs/shop.vn/config.php",
 		"/opt/lampp/htdocs/Dropbox/blog/index.php",
 		"/home/zorinvn/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
-		"/opt/lampp/htdocs/Dropbox/blog/system/core/CodeIgniter.php",
-		"/opt/lampp/htdocs/Dropbox/blog/theme/css/colors/color-darkgray.css",
-		"/opt/lampp/htdocs/Dropbox/blog/theme/css/colors/color-orange.css",
-		"/opt/lampp/htdocs/xampp/cds.php",
-		"/opt/lampp/htdocs/Dropbox/blog/theme/css/colors/color-pink.css",
-		"/opt/lampp/htdocs/xampp/security.php",
-		"/opt/lampp/htdocs/Dropbox/blog/system/database/drivers/sqlite/sqlite_utility.php",
-		"/opt/lampp/htdocs/Dropbox/dienthoai52/publics/tiny_mce/themes/advanced/skins/o2k7/ui_black.css",
-		"/opt/lampp/htdocs/Dropbox/blog/system/database/drivers/cubrid/cubrid_utility.php",
-		"/opt/lampp/htdocs/Dropbox/mafia/yshout-betting/example/light.html",
-		"/home/zorinvn/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
-		"/opt/lampp/htdocs/Dropbox/blog/theme/css/boxed.css",
-		"/opt/lampp/htdocs/Dropbox/blog/theme/css/fancybox.css"
+		"/opt/lampp/htdocs/Dropbox/blog/system/core/CodeIgniter.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -287,6 +326,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"}\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -304,8 +344,83 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "frontend/views/common/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2864,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -419,7 +534,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 250.0,
+	"side_bar_width": 167.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

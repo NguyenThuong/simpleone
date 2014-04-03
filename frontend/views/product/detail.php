@@ -43,7 +43,7 @@
                 </div>
               </div>
               <ul class="productpagecart">
-                <li><a class="cart" href="?controller=cart&action=add&pid=<?php echo $products['id']; ?>">MUA HÀNG</a>
+                <li><a class="cart" href="them-gio-hang.html?pid=<?php echo $products['id']; ?>">MUA HÀNG</a>
                 </li>
               </ul>
             </div>

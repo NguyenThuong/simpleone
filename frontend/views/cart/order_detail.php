@@ -56,7 +56,7 @@
           </div>
 
             <div class="row">
-              <form class="form-horizontal" method="post" action="?controller=cart&action=send">
+              <form class="form-horizontal" method="post" action="dat-hang.html">
                 <fieldset>
                   <div class="span6">
                     <div class="control-group">
