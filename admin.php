@@ -19,6 +19,8 @@ if(!isset($_SESSION['user'])) {
     $action = 'login';
 }
 
+//Url
+
 $file = 'backend/controllers/'.$controller.'/'.$action.'.php';
 if (file_exists($file)) {
     require($file);
